@@ -14,6 +14,16 @@
     <textarea name="description"><%= @product["description"]%></textarea>
   </p>
 
+ <p>
+    <label>Category:</label>
+    <select name="Category">
+      <% @categories = @categories.to_a %>
+      <% @categories.each do |category| %>
+      <option value="<%=@category["product"]%>"><%="#{@category["name"]}"%></option> 
+      <% end %>
+    </select>
+  </p>
+ 
   <p>
     <input type="submit" name="" value="Create the new product.">
   </p>

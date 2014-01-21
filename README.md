@@ -2,12 +2,14 @@
 
 Your company has a working interface written with Sinatra and SQL to manage a list of products in your store.  The manager can add products, edit them, remove them, and view them.
 
-We need a new feature: categories.  
+We need a new feature: categories. 
 
-1. Products should be in many categories, and categories should have many products.  
+1. Products should be in many categories, and categories should have many products. 
 1. The manager should be able to create and delete categories.
+
 1. The manager should be able to see all categories
 1. The manager should be able to go to a category's page and view all the products in that category.
+
 1. The manager should be able to go to a product's page and view all the categories that product is in.
 1. From a product's edit form page, he should also be able to add and remove category memberships for that product.
 

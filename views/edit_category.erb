@@ -1,0 +1,21 @@
+<form action="/products/<%=@product["id"]%>" method="post">
+  <p>
+    <label>Name:</label>
+    <input type="text" name="name" value="<%=@category["name"]%>">
+  </p>
+
+ <p>
+    <label>Products:</label>
+    <select name="Product">
+    	<% @categories = @categories.to_a %>
+      <% @categories.each do |category| %>
+        <option value="<%=product%>"><%= category %></option>
+      <% end %>
+    </select>
+  </p>
+ 
+  <p>
+    <input type="submit" name="" value="Create the new product.">
+  </p>
+</form>
+
